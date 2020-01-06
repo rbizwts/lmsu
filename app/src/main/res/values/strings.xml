@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">LemmeShowU</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="notificationticker">Lemmeshowu Running</string>
+    <string name="action_settings">Settings</string>
+    <string name="logout">Logout</string>
+    <string name="exit">Exit</string>
+    <string name="label_permissions">Please enable Microphone and Storage permissions.</string>
+    <string name="wait_background">Wait in Background</string>
+
+    <string name="directory_selected_label">Directory selected:</string>
+    <string name="choose_directory">Choose Directory</string>
+    <string name="none">none</string>
+    <string name="btn_choose">Choose in Dialog</string>
+    <string name="btn_switch">Switch to Dialog Sample</string>
+
+    <string name="text_cancel">Cancel</string>
+    <string name="text_sign_in">Sign In</string>
+    <string name="text_sign_up">Sign Up</string>
+    <string name="sign_up_to_screen_share_your_android">Sign up to LemmeShowU</string>
+    <string name="signin_text_sign_in_with_google">Sign In with Google</string>
+    <string name="label_account_email">Email</string>
+    <string name="label_account_password">Password</string>
+    <string name="welcome_text_sign_up_with_email">Sign Up</string>
+    <string name="welcome_text_sign_up_with_google">Sign Up with Google</string>
+
+    <string name="btn_logout_from_google">Logout from Google</string>
+    <string name="btn_revoke_access">Revoke Access</string>
+    <string name="loading">Logging in</string>
+
+    <string name="pref_title_enable_sharing">Enable Sharing</string>
+
+</resources>

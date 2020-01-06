@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "997921707640",
+    "project_id": "firebase-lemmeshowu"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:997921707640:android:6295829f6c2dcde9",
+        "android_client_info": {
+          "package_name": "com.vaiha.LemmeShowU"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "997921707640-fd5thjh4o6ekr18e36liu4tv3hnkvt5p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vaiha.LemmeShowU",
+            "certificate_hash": "236D4AB6460B60AC9DE4C59FE47E3789C2637AED"
+          }
+        },
+        {
+          "client_id": "997921707640-5hubuvtm7adoplvirf3t3sgsuftqo89d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBoHbFiEJ45bp1dmAL6ibICjjn8Nr72Ws"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

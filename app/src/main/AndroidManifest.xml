@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.vaiha.LemmeShowU">
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_FRAMEBUFFER" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon,android:theme">
+        <activity
+            android:name="com.vaiha.LemmeShowU.SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.vaiha.LemmeShowU.socketConnection.Receive"
+            android:theme="@style/AppTheme" />
+        <activity android:name="com.vaiha.LemmeShowU.signup.WelcomeActivity" />
+        <activity android:name="com.vaiha.LemmeShowU.signup.SignUpActivity" />
+        <activity android:name="com.vaiha.LemmeShowU.signup.LogInActivity" />
+        <activity android:name="com.vaiha.LemmeShowU.socketConnection.Sharing" />
+        <activity android:name="com.vaiha.LemmeShowU.socketConnection.HomePage"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+        <activity android:name="com.vaiha.LemmeShowU.MainActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.vaiha.LemmeShowU.LemmeShowUPrevious.MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.vaiha.LemmeShowU.MainActivity2"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.vaiha.LemmeShowU.MainActivity4"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.vaiha.LemmeShowU.LemmeShowUPrevious.FrameRate"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.vaiha.LemmeShowU.LemmeShowUPrevious.Setting"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.vaiha.LemmeShowU.Setting"
+            android:noHistory="true"/>
+
+        <!--<activity android:name="com.vaiha.LemmeShowU.SettingsActivity"
+            android:theme="@style/PreferencesTheme"/>-->
+        <activity android:name="com.vaiha.LemmeShowU.SettingsActivity" />
+        <activity
+            android:name="com.vaiha.LemmeShowU.FrameRate"
+            android:noHistory="true" />
+        <activity
+            android:name="com.vaiha.LemmeShowU.BitRate"
+            android:noHistory="true" />
+
+        <activity android:name="net.rdrei.android.dirchooser.DirectoryChooserActivity" />
+
+        <receiver android:name="com.vaiha.LemmeShowU.StopReceiver">
+            <intent-filter>
+                <action android:name="com.vaiha.CUSTOM_INTENT" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.vaiha.LemmeShowU.StartReceiver">
+            <intent-filter>
+                <action android:name="com.vaiha.CUSTOM_INTENT" />
+            </intent-filter>
+
+        </receiver>
+
+        <receiver android:name="com.vaiha.LemmeShowU.LemmeShowUPrevious.StopReceiver">
+            <intent-filter>
+                <action android:name="com.vaiha.CUSTOM_INTENT" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.vaiha.LemmeShowU.LemmeShowUPrevious.StartReceiver">
+            <intent-filter>
+                <action android:name="com.vaiha.CUSTOM_INTENT" />
+            </intent-filter>
+
+        </receiver>
+
+    </application>
+
+</manifest>

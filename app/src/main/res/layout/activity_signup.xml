@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/containerLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/light_gray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@id/emptyTopSpaceLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:orientation="vertical" />
+
+    <TextView
+        android:id="@+id/splashMainLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dip"
+        android:gravity="center"
+        android:lines="2"
+        android:text="@string/sign_up_to_screen_share_your_android"
+        android:textColor="@color/white"
+        android:textSize="21.0sp" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rootSignupLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/purewhite"
+        android:paddingLeft="32.0dip"
+        android:paddingRight="32.0dip"
+        android:paddingTop="6.0dip"
+        android:scrollIndicators="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="0.0px"
+                android:layout_height="0.0px"
+                android:focusable="true"
+                android:focusableInTouchMode="true" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4.0dip"
+                    android:layout_marginTop="38.0dip">
+
+                    <com.vaiha.LemmeShowU.utilities.editText.SIEditText
+                        android:id="@id/input_email"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/label_account_email"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/text_field_text_colour"
+                        android:textColorHint="@color/text_field_text_colour" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4.0dip"
+                    android:layout_marginTop="10.0dip">
+
+                    <com.vaiha.LemmeShowU.utilities.editText.SIEditText
+                        android:id="@+id/input_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Name"
+                        android:inputType="textCapWords"
+                        android:textColor="@color/text_field_text_colour"
+                        android:textColorHint="@color/text_field_text_colour" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4.0dip"
+                    android:layout_marginTop="10.0dip">
+
+                    <com.vaiha.LemmeShowU.utilities.editText.SIEditText
+                        android:id="@+id/input_password"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/label_account_password"
+                        android:inputType="textPassword"
+                        android:textColor="@color/text_field_text_colour"
+                        android:textColorHint="@color/text_field_text_colour" />
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btn_signup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24.0dip"
+                    android:layout_marginTop="28.0dip"
+                    android:background="@drawable/ripple_blue"
+                    android:padding="12.0dip"
+                    android:text="@string/text_sign_up"
+                    android:textAllCaps="false"
+                    android:textSize="19.0sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/signUpCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="?selectableItemBackground"
+                android:fontFamily="sans-serif"
+                android:padding="6.0dip"
+                android:text="@string/text_cancel"
+                android:textColor="@color/google_sign_in_text_color"
+                android:textSize="18.0dip" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

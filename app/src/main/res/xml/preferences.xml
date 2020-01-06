@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/light_gray">
+
+    <PreferenceCategory
+        android:key="custom_category"
+        android:title="Customisations">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="sharing_sync"
+            android:title="@string/pref_title_enable_sharing" />
+
+        <RingtonePreference
+            android:dialogMessage="Customise Notification Ringtone for you"
+            android:dialogTitle="Notification Ringtone"
+            android:key="notification_ringtone"
+            android:summary="Customise location path for you"
+            android:title="@string/choose_directory" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="sync_category"
+        android:title="Sync Information">
+
+        <!-- <CheckBoxPreference
+             android:key="perform_sync"
+             android:summary="Enable or disable data sync"
+             android:title="Enable Auto Sync"
+             android:defaultValue="true"/>-->
+
+        <ListPreference
+            android:defaultValue="1F"
+            android:entries="@array/updateInterval"
+            android:entryValues="@array/updateIntervalValues"
+            android:key="sync_interval"
+            android:summary="Define how often Encoding Bitrate will be performed"
+            android:title="Encoding Bitrate" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="capture_category"
+        android:title="Capture Information">
+
+        <ListPreference
+            android:defaultValue="Video"
+            android:entries="@array/updateModeValues"
+            android:entryValues="@array/updateModeValues"
+            android:key="sync_mode"
+            android:summary="Define how often Capture will be performed"
+            android:title="Capture mode" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="language_category"
+        android:title="Language Information">
+
+        <ListPreference
+            android:defaultValue="English"
+            android:entries="@array/updateLanguageValues"
+            android:entryValues="@array/updateLanguageValues"
+            android:key="sync_language"
+            android:summary="Define how often Language will be performed"
+            android:title="Select Language" />
+
+    </PreferenceCategory>
+
+    <!--<PreferenceCategory
+        android:title="Personal Informations"
+        android:key="personal_category">
+
+
+        <EditTextPreference
+            android:key="full_name"
+            android:title="Name"
+            android:summary="Enter Your Complete Name"
+            android:dialogTitle="Your Name"
+            android:dialogMessage="Enter Your Complete Name"
+            android:defaultValue=""
+            android:inputType="textCapWords"/>
+
+        <EditTextPreference
+            android:key="email_address"
+            android:title="Email Address"
+            android:summary="Enter Your Email Address"
+            android:dialogTitle="Enter Your Email Address"
+            android:dialogMessage="Enter Your Email Address"
+            android:defaultValue=""
+            android:inputType="textEmailAddress"/>
+
+    </PreferenceCategory>-->
+
+
+</PreferenceScreen>

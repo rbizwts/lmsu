@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1.0"
+    android:background="@color/light_gray"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="0.45"></RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="32.0dip"
+        android:paddingRight="32.0dip">
+
+        <Button
+            android:id="@+id/welcomeGoogleSignUpButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6.0dip"
+            android:background="@drawable/ripple_signup_red"
+            android:drawableLeft="@drawable/google_plus_white"
+            android:drawablePadding="10.0dip"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="40.0dip"
+            android:paddingRight="40.0dip"
+            android:text="@string/welcome_text_sign_up_with_google"
+            android:textAllCaps="false"
+            android:textColor="@color/purewhite"
+            android:textSize="18.0sp" />
+
+        <Button
+            android:id="@+id/welcomeSignUpButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18.0dip"
+            android:background="@drawable/ripple_blue"
+            android:fontFamily="sans-serif"
+            android:text="@string/welcome_text_sign_up_with_email"
+            android:textAllCaps="false"
+            android:textColor="@color/purewhite"
+            android:textSize="18.0sp" />
+
+        <Button
+            android:id="@+id/welcomeSignInButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24.0dip"
+            android:background="@color/white"
+            android:fontFamily="sans-serif"
+            android:text="@string/text_sign_in"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="18.0sp" />
+    </LinearLayout>
+</LinearLayout>

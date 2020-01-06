@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/containerLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/light_gray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/emptyTopSpaceLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="100.0dip"
+        android:orientation="vertical" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rootLoginLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/purewhite"
+        android:paddingLeft="32.0dip"
+        android:paddingRight="32.0dip"
+        android:paddingTop="4.0dip"
+        android:scrollIndicators="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="0.0px"
+                android:layout_height="0.0px"
+                android:focusable="true"
+                android:focusableInTouchMode="true" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/signinWithGoogle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12.0dip"
+                    android:layout_marginTop="44.0dip"
+                    android:background="@drawable/ripple_sign_in_grey"
+                    android:drawableLeft="@drawable/google_plus_grey"
+                    android:fontFamily="sans-serif"
+                    android:paddingLeft="40.0dip"
+                    android:paddingRight="54.0dip"
+                    android:text="@string/signin_text_sign_in_with_google"
+                    android:textAllCaps="false"
+                    android:textColor="@color/google_sign_in_text_color"
+                    android:textSize="18.0sp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8.0dip"
+                    android:gravity="center"
+                    android:text="or"
+                    android:textSize="20.0sp" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/loginEmailInputLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6.0dip">
+
+                    <com.vaiha.LemmeShowU.utilities.editText.SIEditText
+                        android:id="@+id/input_email"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/label_account_email"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/text_field_text_colour"
+                        android:textColorHint="@color/text_field_text_colour" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/passwordEmailInputLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12.0dip"
+                    android:layout_marginTop="8.0dip">
+
+                    <com.vaiha.LemmeShowU.utilities.editText.SIEditText
+                        android:id="@+id/input_password"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/label_account_password"
+                        android:inputType="textPassword"
+                        android:textColor="@color/text_field_text_colour"
+                        android:textColorHint="@color/text_field_text_colour" />
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btn_login"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24.0dip"
+                    android:layout_marginTop="16.0dip"
+                    android:background="@drawable/ripple_blue"
+                    android:padding="12.0dip"
+                    android:text="@string/text_sign_in"
+                    android:textAllCaps="false"
+                    android:textSize="19.0sp" />
+
+                <TextView
+                    android:id="@+id/loginCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="?selectableItemBackground"
+                    android:fontFamily="sans-serif"
+                    android:padding="8.0dip"
+                    android:text="@string/text_cancel"
+                    android:textColor="@color/google_sign_in_text_color"
+                    android:textSize="18.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

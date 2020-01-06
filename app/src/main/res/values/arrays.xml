@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="updateInterval">
+        <item name="1000">0.25F</item>
+        <item name="5000">0.5F</item>
+        <item name="30000">1F</item>
+        <item name="60000">2F</item>
+    </string-array>
+
+    <string-array name="updateIntervalValues">
+        <item name="1000">0.25F</item>
+        <item name="5000">0.5F</item>
+        <item name="30000">1F</item>
+        <item name="60000">2F</item>
+    </string-array>
+
+    <string-array name="updateModeValues">
+        <item name="img">Images</item>
+        <item name="vid">Video</item>
+    </string-array>
+
+    <string-array name="updateLanguageValues">
+        <item name="en">English</item>
+        <item name="span">Spanish</item>
+        <item name="fr">French</item>
+        <item name="ja">Japanese</item>
+    </string-array>
+</resources>
